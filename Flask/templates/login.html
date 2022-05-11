@@ -1,0 +1,32 @@
+{% from "_formhelpers.html" import render_field %}
+{% extends "base.html" %}
+{% block title%}mypage{% endblock%}
+{% block content %}
+{% for message in get_flashed_messages() %}
+{{ message }}
+{% endfor %}
+<body class="index_body ">
+    <header>
+        <h2 class="rogo">portfolio</h2>
+    </header>
+        <main class="index_main">
+            <div id="login">           
+                <form class="login_form" method="POST">
+                    <div class="container">
+                        {{form.csrf_token}}
+                        {{render_field(form.email,class="form-control")}}
+                        {{render_field(form.password,class="form-control")}}
+                        </div>
+                        <hr class="login_line">
+                        {{form.submit(class='button_z')}}
+                </form>
+                <a class="input" href="{{url_for('app.register')}}">ユーザー新規登録</a>
+                <li class="loginpass">パスワードは以下になります。</li>
+                <li class="loginpass">testuser</li>
+            </div>
+        </main>
+    <footer>
+        <P class="footer">&copy; 2022 kotaro takano </P>
+    </footer>
+</body>
+ {% endblock %}

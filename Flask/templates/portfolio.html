@@ -1,0 +1,231 @@
+{% extends "base.html" %}
+{%block title%}HOME{%endblock%}
+{% block content %}
+<body>
+<header>
+    <h2 class="rogo"><span>P</span>ortfolio</h2>
+        <nav>
+            <ul>
+                <li><a href="{{url_for('app.logout')}}">ログアウト</a></li>
+                <li><a href="{{url_for('app.inquiry')}}">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    <h4 class="u_name">{{current_user.username}}&nbsp;様</h4>
+</header>
+<div class= "main_box"></div>
+<hr class="line_2">
+<div class= "text_box1">
+    <h3 class="article">ポートフィリオをご確認頂きありがとうございます。</h3>
+    <h3 class="article">職務経歴要略とITへの取り組みに付する情報を記載させていただきました。</h3>
+    <h3 class="article">選考のご参考にしていただけたら幸いです。</h3>
+</div>
+<hr class="line_2">
+<div class="tablea_box">
+<h1 class="title_text1">職務経歴要略</h1> 
+<div class="tablea">
+    <table class="brwsr1">
+        <tbody>
+            <tr class="tablea9">
+                <th class="t1">在籍年月</th>
+                <td class="t2">勤務年数</td>
+                <td class="t3">会社名</td>
+                <td class="t4">業種</td>
+                <td class="t5">雇用形態</td>
+            </tr>
+            <tr>
+                <th class="t1">2010年2月～2012年9月</th>
+                <td class="t2">2年7カ月</td>
+                <td class="t3">株式会社サカイ引越センター</td>
+                <td class="t4">運送・サービス</td>
+                <td class="t5">東京城西支社配属<br>正社員</td>
+            </tr>
+            <tr>
+                <th class="t1">2013年3月～2019年10月</th>
+                <td class="t2">6年7ヶ月</td>
+                <td class="t3">藤田観光株式会社</td>
+                <td class="t4">観光・旅館</td>
+                <td class="t5">ホテル椿山荘TOKYO（料飲科<br>ホテル内社員として勤務</td>
+            </tr>
+            <tr>
+                <th class="t1">2020年7月～現在に至る</th>
+                <td class="t2">1年9ヶ月</td>
+                <td class="t3">株式会社NTT東日本南関東</td>
+                <td class="t4">IT・通信</td>
+                <td class="t5">派遣雇用</td>
+            </tr>
+            <tr>
+                <th class="t1">2020年7月～現在に至る<br>(※2022年6月末迄)</th>
+                <td class="t2">1年9ヶ月</td>
+                <td class="t3">ー</td>
+                <td class="t4">ー</td>
+                <td class="t5">請負業務・業務委託</td>
+            </tr>
+        </tbody>
+    </table>
+</div> 
+<div class="tab">
+    <ul class="tab-menu">
+        <li class="tab-item active">閉じる</li>
+        <li class="tab-item">職務詳細を見る</li>
+    </ul>
+</div>
+<div class="tab-box">
+    <div class="tab-content show"></div>
+        <div class="tab-content">
+            <div class= "text_box4">
+                <div class= "text_box5">
+                    <h1>株式会社サカイ引越センター</h1>
+                        <hr class="line_2">
+                            <ul>
+                                <li>＜主な仕事内容＞</li>
+                                  </ul>
+                                    <ul class="job2">
+                                        <li>・庶務、一般事務(入出金伝票処理:倉庫管理等)</li>
+                                        <li>・現業(営業現業補助業務:個人顧客対応:マンション立ち会い業務)</li>
+                                        <li>・その他(クレーム処理等)</li>
+                                    </ul>
+                                <hr class="line_2">
+                            <Ul class="job3">
+                        <li> 主に現業や事務の補助業務となります。</li>                      
+                        <li> 顧客(個人)対応時は、様々なシチュエーションに対応する為</li>
+                        <li> パーソナルスペースを重視した、対応を心がけて業務を遂行いたしました。</li>
+                            </Ul>
+                                </div>
+                                    <div class= "text_box5">
+                                        <h1>藤田観光株式会社</h1>
+                                            <hr class="line_2">
+                                                <ul>
+                                                    <li>＜主な仕事内容＞</li>
+                                                </ul>
+                                            <ul class="job">
+                                        <li>・購買業務(ホテル内ショップ,ラウンジ商品の開発：担当店舗の法人仕入れ単価交渉）</li>
+                                        <li>・店頭管理事務（担当新卒定期テストの作成:インターン生の他部署見学:残業管理)</li>
+                                        <li>・MGサポート業務（口コミ集計分析:入客数集計:費用の集計や売上ABC分析)</li>
+                                        <li>・備品管理業務(修繕.改良リース契約、ブリケージ削減等)</li>
+                                    </ul> 
+                                <hr class="line_2">
+                            <Ul class="job3">
+                        <li> 3年目より、他部署との連携や担当店舗に関与する</li>                      
+                        <li> 店頭管理事務,法人対応,ホテルVIPの対応をなどを経験</li>
+                            </ul>   
+                                </div>   
+                                     </div>
+                                         <div class= "text_box4">
+                                             <div class= "text_box5">
+                                                <h1>株式会社NTT東日本南関東</h1>
+                                                    <hr class="line_2"> 
+                                                <ul>
+                                                    <li>＜主な仕事内容＞</li>
+                                                        </Ul>
+                                                    <Ul class="job3">
+                                                 <li>営業、SE補助業務</li>
+                                            </Ul>
+                                        <ul class="job">
+                                    <li>・電話機へのファーム投入</li>
+                                    <li>・関連会社への申込取り継ぎ</li>
+                                    <li>・SE部門設計内容の不備確認業務</li>
+                                    <li>・自社ポータルサイトを用いて、顧客設定の変更</li>
+                                </ul>
+                            <Ul class="job3">
+                        <li>一般、管理事務</li>
+                    </Ul>
+                    <ul class="job">
+                    <li>・ルータ内部のバンドル配信状況の確認</li>
+                    <li>・日報作成</li>
+                    <li>・プラン申込書記入サポート業務</li>
+                    <li>・故障切り分け、災害時支援等含む</li>
+                    </ul>   
+                        </div>
+                            <div class= "text_box5">
+                                <h1>請負業務・業務委託</h1>
+                                    <hr class="line_2">
+                                        <ul>
+                                            <li>株式会社三徳</li>
+                                        </ul>
+                                    <ul class="job2">
+                                <li>・業種：土木建築</li>
+                                <li>・ご契約者:取締役　飯田仁士　様</li>
+                                <li>・請負内容:WEBサイト構築</li>
+                                <li>・納期:2022年6月30日迄（現在仕掛中）</li>
+                                <li>・請負契約書の提示：可能</li>
+                                   </ul>
+                                 <hr class="line_2">
+                                 <ul>
+                                   <li>株式会社美Trust</li>
+                                </ul>
+                            <ul class="job2">
+                        <li>・業種：クリニック</li>
+                        <li>・ご契約者：代表　鈴木裕子　様</li>
+                        <li>・委託内容:青色申告の作成、給料計算</li>
+                        <li>・期間:2020年07月～2021年12月&copy;迄</li>
+                        <li>・委託契約書の提示:可能</li>
+                        <li>　※経営者の意向により一種間程度ご提出までにお時間を頂きます。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+<div class= "damy"></div>
+<hr class="line_2">
+    <h1 class="title_text">ITへの挑戦と体制を整える</h1> 
+<hr class="line_2">
+<div class= "text_boxiot">
+    <h3 class="article">エンジニアとしての経験は未経験になります。</h2>
+    <h3 class="article">基本情報などの学習面は東京通信大学のeラーニングを活用して日々取り組んでいます。</h2>
+    <h3 class="article">プログラミング言語については独習になりますがPythonとSQLを中心に基礎学習を積んで参りました。</h2>
+    <h4 >※大学について：在学中になりますが通信性の社会人大学のため残業や休日調整などに影響はありません。</h4>
+</div>
+<hr class="line_2">
+<div class= "text_box2">
+    <div class= "text_box3_1">
+        <h3 class="article">開発環境</h2>
+            <ul>
+                <li>MacBook Pro&nbsp;,&nbsp;Ubuntu/Linax</li>
+                <li>※Ubuntuは環境開発学習中になります。</li>
+                </ul>
+                    <h3 class="article">コードエディタ</h3>
+                <ul>
+                    <li>VSCode&nbsp;,&nbsp;jupyterLab&nbsp;,&nbsp;MySQL&nbsp;Workbench</li>
+                </ul>
+            <h3 class="article">Git hub</h3>
+            <ul>
+            <li></li>
+        </ul>
+        </div>
+        <div class= "text_box3">
+            <h3 class="article">Python3.8</h2>
+                <ul>
+                    <li>基礎学習からのデータ事前処理や可視化などの学習に取り組んでいます。</li>
+                    <li>参考資料として、WEBAPPを二点ご提出させていただきます。</li>
+                    <li>アプリケーション構築は主にPython基礎学習のアウトプットが目的で取り組んでいます。</li>
+                    <li>streamli_app&nbsp;&nbsp;&nbsp;https://share.streamlit.io/x1106/portfolio/main/streamlit.py</li>
+                    <li>※エントリーメール記載のURLと同じになります。</li>
+                </ul>
+            <h3 class="article">MySQL5.7</h2>
+        <ul>
+            <li>現在はOracleブロンズの取得に向けて、AWSにDBの構築を行い</li>
+            <li>基礎を定着できる様に取り組んでいます。</li>
+        </ul>
+    </div>
+</div>
+<div class= "text_box">
+    <h1>PythonとSQLで主に活用した教材</h1>
+    <ul>
+        <li>書籍.独習Python/Pythonレシピ集.現場で使える!pandasデータ前処理入門機械学習・データサイエンスで役立つ前処理手法</li>
+        <li>Udemy.現役シリコンバレーエンジニアが教えるPython 3 入門 + 応用 +アメリカのシリコンバレー流コードスタイル</li>
+        <li>Udemy.[Python+FlaskでのWebアプリケーション開発講座.～0からFlaskをマスターしてSNSを作成する～]</li>
+        <li>書籍.ゼロから始めるデータベース操作.Bronze Oracle Database 12c SQL基礎</li>
+        <li>Udemy.入門から応用まで】これだけでMySQLをマスター最も包括的にSQLデータ解析を学べる講座</li>
+        <li>Udemy.入門から応用まで】これだけでMySQLをマスター最も包括的にSQLデータ解析を学べる講座</li>
+    </ul>
+</div>
+<footer>
+<P class="footer">&copy; 2021 kotaro takano </P>
+</footer>
+<script
+src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous">
+</script>
+</body>
+{% endblock %}

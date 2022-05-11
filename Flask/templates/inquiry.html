@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{%block title%}HOME{%endblock%}
+{% block content %}
+{% from "_formhelpers.html" import render_field %}
+<body class="inquiry_body">
+    <header>
+        <h2 class="rogo">portfolio</h2>
+        <nav>
+            <ul class="nav">
+            <li><a href="{{url_for('app.portfolio')}}"> &nbsp; home &nbsp; </a></li>
+            <li><a href="{{url_for('app.login')}}">ログアウト</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="inquiry_main">   
+            <form action="{{ url_for('app.inquiry') }}"  method="POST">
+                <div class="container3">
+                    {{ form.csrf_token }}
+                    {{ render_field(form.name2,class="form-control2")}}
+                    {{ render_field(form.manager2,class="form-control2",default="")}}
+                    {{ render_field(form.mail2,class="form-control2",default="")}} 
+                    {{ render_field(form.memo2,rows="7",cols="36",default="")}}
+                    {{ form.submit(class="button_z")}}
+            </form>
+            </div>
+    </main>
+    <footer>
+       <P class="footer">&copy; 2022 kotaro takano </P>
+    </footer>
+    </div>
+</body>
+{% endblock %}

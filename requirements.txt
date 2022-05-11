@@ -1,0 +1,48 @@
+alembic==1.7.7
+appnope==0.1.0
+asgiref==3.5.0
+backports.zoneinfo==0.2.1
+bcrypt==3.2.0
+blinker==1.4
+certifi==2021.10.8
+cffi==1.15.0
+click==8.0.4
+Django==4.0.3
+django-db==0.0.7
+dnspython==2.2.1
+dominate==2.6.0
+email-validator==1.1.3
+emailvalidator==0.3
+Flask==2.0.3
+Flask-Bcrypt==0.7.1
+Flask-Bootstrap==3.3.7.1
+Flask-DebugToolbar==0.11.0
+Flask-Login==0.5.0
+Flask-Mail==0.9.1
+Flask-Migrate==3.1.0
+Flask-SQLAlchemy==2.5.1
+Flask-WTF==1.0.0
+greenlet==1.1.2
+gunicorn==20.1.0
+idna==3.3
+importlib-metadata==4.11.3
+importlib-resources==5.4.0
+ipykernel @ file:///Users/runner/miniforge3/conda-bld/ipykernel_1644979815902/work/dist/ipykernel-6.9.1-py3-none-any.whl
+ipython @ file:///Users/runner/miniforge3/conda-bld/ipython_1646324775137/work
+itsdangerous==2.1.0
+Jinja2==3.0.3
+jupyter-client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1642858610849/work
+jupyter-core @ file:///Users/runner/miniforge3/conda-bld/jupyter_core_1645024290809/work
+Mako==1.2.0
+MarkupSafe==2.1.0ss-0.7.0-py2.py3-none-any.whl
+SQLAlchemy==1.4.32
+sqlparse==0.4.2
+stack-data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1644872665635/work
+tenacity==8.0.1
+tornado @ file:///Users/runner/miniforge3/conda-bld/tornado_1635819838703/work
+traitlets @ file:///home/conda/feedstock_root/build_artifacts/traitlets_1635260543454/work
+visitor==0.1.3
+wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1600965781394/work
+Werkzeug==2.0.3
+WTForms==3.0.1
+zipp==3.7.0

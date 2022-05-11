@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title%}mypage{% endblock%}
+{% block content %}
+<body class="index_body2">
+    <header>
+        <h2 class="rogo">portfolio</h2>
+    </header>
+        <main class="index_main">
+            <div id="login">
+                <div class="container2">
+                    <h4>{{current_user.username}}様<br>ポートフィリオをご確認いただき<br>ありがとうございました。</h4>
+                    <ul class="nav">
+                        {% if current_user.is_authenticated %}
+                        <li><a href="{{url_for('app.logout')}}">ログアウト</a></li>
+                        {% endif %}
+                        <li><a href="{{url_for('app.portfolio')}}">ユーザ画面に戻る</a></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    <footer>
+        <P class="footer">&copy; 2021 kotaro takano </P>
+    </footer>
+</body>
+{% endblock %}

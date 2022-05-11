@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<body>
+    <h1>Webからメールがきたよ</h1>
+    <p>{{current_user.username}}様</p>
+    <p>{{session['name2']}}</p>
+    <p>{{session['manager2']}}</p>
+    <p>{{session['mail2']}}</p>
+    <p>{{session['memo2']}}</p>
+</body>
+{% endblock %}

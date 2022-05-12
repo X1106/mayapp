@@ -25,9 +25,6 @@ Flask-WTF==1.0.0
 greenlet==1.1.2
 gunicorn==20.1.0
 idna==3.3
-importlib-metadata==4.11.3
-importlib-resources==5.4.0
-ipython @ file:///Users/runner/miniforge3/conda-bld/ipython_1646324775137/work
 itsdangerous==2.1.0
 Jinja2==3.0.3
 Mako==1.2.0

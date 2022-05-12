@@ -27,12 +27,9 @@ gunicorn==20.1.0
 idna==3.3
 importlib-metadata==4.11.3
 importlib-resources==5.4.0
-ipykernel @ file:///Users/runner/miniforge3/conda-bld/ipykernel_1644979815902/work/dist/ipykernel-6.9.1-py3-none-any.whl
 ipython @ file:///Users/runner/miniforge3/conda-bld/ipython_1646324775137/work
 itsdangerous==2.1.0
 Jinja2==3.0.3
-jupyter-client @ file:///home/conda/feedstock_root/build_artifacts/jupyter_client_1642858610849/work
-jupyter-core @ file:///Users/runner/miniforge3/conda-bld/jupyter_core_1645024290809/work
 Mako==1.2.0
 MarkupSafe==2.1.0ss-0.7.0-py2.py3-none-any.whl
 SQLAlchemy==1.4.32
